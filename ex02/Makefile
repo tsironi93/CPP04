@@ -1,4 +1,4 @@
-NAME			= AnimalsWithBrains
+NAME			= AbstractAnimal
 #BONUS_NAME 	= _bonus
 
 CXX				= c++
