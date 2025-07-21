@@ -8,10 +8,6 @@ class AMateria;
 class ICharacter {
 
 	public:
-		ICharacter() = delete;
-		ICharacter(const ICharacter &src) = delete;
-		ICharacter &operator=(const ICharacter &rhs) = delete;
-		ICharacter(const std::string &name) = delete;
 		virtual ~ICharacter() {}
 
 		virtual const std::string &getName() const = 0;

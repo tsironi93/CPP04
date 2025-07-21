@@ -8,6 +8,7 @@ class Cure : public AMateria {
 	public:
 		Cure();
 		Cure &operator=(const Cure &other);
+		Cure(const Cure &src);
 		virtual ~Cure();
 
 		virtual AMateria *clone() const override;

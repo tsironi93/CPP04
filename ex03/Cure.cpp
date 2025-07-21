@@ -10,6 +10,8 @@ Cure &Cure::operator=(const Cure &other) {
 	return *this;
 }
 
+Cure::Cure(const Cure &src) : AMateria(src) {}
+
 Cure::~Cure() {}
 
 AMateria *Cure::clone() const {

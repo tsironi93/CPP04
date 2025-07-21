@@ -2,14 +2,15 @@ NAME			= Recap
 #BONUS_NAME 	= _bonus
 
 CXX				= c++
-CXXFLAGS		= -Wall -Wextra -Werror -O2 -std=c++17 -MMD -Wshadow -Wno-shadow #-g -fsanitize=address -fno-omit-frame-pointer
+CXXFLAGS		= -Wall -Wextra -Werror -O2 -std=c++17 -MMD -Wshadow -Wno-shadow -g #-fsanitize=address -fno-omit-frame-pointer
 
 SRC_DIR         = .
 OBJ_DIR         = src_o
 SRC_BONUS_DIR   = src_bonus
 OBJ_BONUS_DIR   = src_bonus_o
 
-SRC				= ./main.cpp ./AMateria.cpp
+SRC				= ./main.cpp ./AMateria.cpp ./Character.cpp ./Cure.cpp ./Ice.cpp \
+					./MateriaSource.cpp ./AMateria.cpp ./MateriaSource.cpp
 OBJ 			= $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRC))
 
 #SRC_BONUS   = $(wildcard $(SRC_BONUS_DIR)/*.cpp)
