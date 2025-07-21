@@ -40,8 +40,10 @@
 	// delete j;
 	// delete i;
 	// return 0;
-	//
+	//}
 	/// // Subject main on steroids
+	// 
+	//
 int main()
 {
 	int	counter = 6;
@@ -67,10 +69,10 @@ int main()
 		dynamic_cast<Cat*>(fillAnimal[i])->setIdeas("Cat ideas, meow meow\n");
 
 	for (i = 0; i < (counter / 2); i++) //display dog's first idea
-		dynamic_cast<Dog*>(fillAnimal[i])->PrintOneIdea(0);
+		dynamic_cast<Dog*>(fillAnimal[i])->PrintOneIdea(i);
 
 	for (i = (counter / 2); i < counter; i++) //display cat's first idea
-		dynamic_cast<Cat*>(fillAnimal[i])->PrintOneIdea(0);
+		dynamic_cast<Cat*>(fillAnimal[i])->PrintOneIdea(i);
 
 	std::cout << "\n-----------------------SOUNDS----------------------\n";
 	for (i = 0; i < counter; i++)
